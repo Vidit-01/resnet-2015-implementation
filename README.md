@@ -45,6 +45,9 @@ python train.py models/resnet.py
 By default, the model trains with `n = 5`, which corresponds to **ResNet-32**.
 Modify `n` inside `models/resnet.py` to change the depth.
 
+## My Observations
+
+The Resnet architecture has trained easily than other smaller models such as Alexnet and VGG. This shows that using batchnorm at everystep and residual connections in networks enable faster training, the model also gives 100% accuracy on train set, which is surprising that neither VGG or Alexnet gave, This might be due to the fact that resnet-32 is a much deeper network, but the number of parameters are less due to only a single layer of Linear Layer. Majority of data is stored in Linear Layers, and Convolayers usually act as feature extractors, but here it is only used as a clasifier. 
 ---
 
 ## Citations
