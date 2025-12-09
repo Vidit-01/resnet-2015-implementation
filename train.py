@@ -34,7 +34,7 @@ def main():
         args.bs, args.workers)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer,
         mode="max",
