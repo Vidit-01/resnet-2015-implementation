@@ -1,7 +1,3 @@
-Here is the same improved README with a **formal citation section added at the end**:
-
----
-
 # ResNet Implementation (He et al.)
 
 This repository contains a faithful reproduction of the **ResNet architecture** from the paper *Deep Residual Learning for Image Recognition*. The key idea behind ResNets is the **skip connection**, which helps alleviate the degradation problem by allowing gradients to flow more easily through deep networks.
